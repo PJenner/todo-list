@@ -6,7 +6,8 @@
     stages {​​​​​​​
         stage('Build') {​​​​​​​
             steps {​​​​​​​
-                sh "./installations.sh"
+                sh 'chmod +x installations.sh'
+                sh 'chmod +x deployment.sh'
             }​​​​​​​
         }​​​​​​​
         stage('Test') {​​​​​​​
