@@ -3,7 +3,7 @@
     stages {​​​​​​​
         stage('Build') {​​​​​​​
             steps {​​​​​​​
-                //
+                sh "./installations.sh
             }​​​​​​​
         }​​​​​​​
         stage('Test') {​​​​​​​
