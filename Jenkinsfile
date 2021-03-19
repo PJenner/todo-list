@@ -12,7 +12,7 @@
         }​​​​​​​
         stage('Test') {​​​​​​​
             steps {​​​​​​​
-                sh "./testing.sh"
+                sh 'bash "source venv/bin/activate" && python3 -m pytest --cov=application junitxml=junit.xml
             }​​​​​​​
         }​​​​​​​
         stage('Deploy') {​​​​​​​
